@@ -103,6 +103,12 @@ public class BuyCalculatorActivity extends Activity {
 		tv.setText("Sell/Share (+%) : " + sellPrice + " BDT ");
 
 
+		et = (EditText) findViewById(R.id.sellValue);
+		et.setText(sellPrice.toString());
+
+		this.calculateProfit(v);
+
+
 	}
 
 	public void calculateProfit(View v){
@@ -194,7 +200,7 @@ public class BuyCalculatorActivity extends Activity {
 		tv.setTypeface(tf);
 		
 		if(totalprofit > 0)
-			tv.setTextColor(Color.GREEN);
+			tv.setTextColor(Color.BLUE);
 		else
 			tv.setTextColor(Color.RED);
 
