@@ -75,6 +75,16 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     	 
     }
+
+    public void openFavList(View v){
+        Intent intent = new Intent(this, FavCompanyListActivity.class);
+        startActivity(intent);
+    }
+
+    public void openSelectedCompanyList(View v){
+        Intent intent = new Intent(this, SelectedCompanyListActivity.class);
+        startActivity(intent);
+    }
     
     
     public void mixedFunctions(View v){ 

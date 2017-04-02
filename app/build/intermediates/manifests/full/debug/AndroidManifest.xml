@@ -27,7 +27,9 @@
         <activity android:name="com.example.myandroidappdemo.BuyCalculatorActivity" />
         <activity android:name="com.example.myandroidappdemo.CompanyListActivity" />
         <activity android:name="com.example.myandroidappdemo.CompanyDetailsActivity" />
+        <activity android:name="com.example.myandroidappdemo.SelectedCompanyListActivity" />
         <activity android:name="com.example.myandroidappdemo.MixedFunctionActivity" />
+        <activity android:name="com.example.myandroidappdemo.FavCompanyListActivity" />
     </application>
 
 </manifest>

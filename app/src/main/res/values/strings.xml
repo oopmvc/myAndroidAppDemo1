@@ -44,6 +44,8 @@
     <string name="initial_available_money">200000</string>
     <string name="profit">Profit</string>
     <string name="set_money">Set $</string>
+    <string name="selectedCompanyList"> Selected Companies </string>
+    <string name="favCompanylist"> Fav Company List</string>
     
      
 </resources>

@@ -27,7 +27,9 @@
         <activity android:name=".BuyCalculatorActivity" />
         <activity android:name="CompanyListActivity"></activity>
         <activity android:name="CompanyDetailsActivity"></activity>
+        <activity android:name="SelectedCompanyListActivity"></activity>
         <activity android:name="MixedFunctionActivity"></activity>
+        <activity android:name="FavCompanyListActivity"></activity>
         
     </application>
 

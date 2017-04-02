@@ -13,9 +13,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:layout_below="@+id/button5"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/app_title" />
+        android:layout_marginTop="54dp" />
 
     <Button
         android:id="@+id/button3"
@@ -33,11 +34,12 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="17dp"
         android:gravity="center_horizontal"
-        android:text="@string/buy_calculator" />
+        android:text="@string/buy_calculator"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
 
     <Button
         android:id="@+id/button2"
@@ -49,6 +51,31 @@
         android:onClick="openCompanyList"
         android:text="@string/company_list" />
 
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="openSelectedCompanyList"
+        android:text="@string/selectedCompanyList"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="openFavList"
+        android:text="@string/favCompanylist"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true" />
+
+
+
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
@@ -58,5 +85,7 @@
         android:gravity="center_horizontal"
         android:onClick="mixedFunctions"
         android:text="@string/mixed_functions" />
+
+
 
 </RelativeLayout>

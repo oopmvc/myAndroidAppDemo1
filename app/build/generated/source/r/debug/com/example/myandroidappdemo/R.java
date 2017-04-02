@@ -26,9 +26,9 @@ public final class R {
         public static final int button3=0x7f080019;
         public static final int button4=0x7f08001a;
         public static final int button5=0x7f08001b;
-        public static final int button6=0x7f08001f;
-        public static final int button7=0x7f08001d;
-        public static final int button8=0x7f08001e;
+        public static final int button6=0x7f08001d;
+        public static final int button7=0x7f08001e;
+        public static final int button8=0x7f08001f;
         public static final int buyPrice=0x7f080002;
         public static final int buyPriceTV=0x7f080001;
         public static final int buy_calculateBtn=0x7f080012;
@@ -59,8 +59,10 @@ public final class R {
         public static final int activity_buy_calculator=0x7f030000;
         public static final int activity_company_details=0x7f030001;
         public static final int activity_company_list=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_mixedfunctions=0x7f030004;
+        public static final int activity_fav_list=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_mixedfunctions=0x7f030005;
+        public static final int activity_selected_company_list=0x7f030006;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -91,24 +93,26 @@ public final class R {
         public static final int exit_app=0x7f060016;
         public static final int expectedProfit=0x7f060017;
         public static final int expectedProfitValue=0x7f060018;
-        public static final int fill_input=0x7f060019;
-        public static final int initial_available_money=0x7f06001a;
-        public static final int initial_buy_quantity=0x7f06001b;
-        public static final int last_tow_year_vol=0x7f06001c;
-        public static final int last_two_year_price=0x7f06001d;
-        public static final int mixed_functions=0x7f06001e;
-        public static final int pe=0x7f06001f;
-        public static final int profit=0x7f060020;
-        public static final int profit_loss=0x7f060021;
-        public static final int quantity=0x7f060022;
-        public static final int sell_price=0x7f060023;
-        public static final int set_money=0x7f060024;
-        public static final int top_20=0x7f060025;
-        public static final int top_gainer=0x7f060026;
-        public static final int top_looser=0x7f060027;
-        public static final int total_price=0x7f060028;
-        public static final int unit_price=0x7f060029;
-        public static final int zerostr=0x7f06002a;
+        public static final int favCompanylist=0x7f060019;
+        public static final int fill_input=0x7f06001a;
+        public static final int initial_available_money=0x7f06001b;
+        public static final int initial_buy_quantity=0x7f06001c;
+        public static final int last_tow_year_vol=0x7f06001d;
+        public static final int last_two_year_price=0x7f06001e;
+        public static final int mixed_functions=0x7f06001f;
+        public static final int pe=0x7f060020;
+        public static final int profit=0x7f060021;
+        public static final int profit_loss=0x7f060022;
+        public static final int quantity=0x7f060023;
+        public static final int selectedCompanyList=0x7f060024;
+        public static final int sell_price=0x7f060025;
+        public static final int set_money=0x7f060026;
+        public static final int top_20=0x7f060027;
+        public static final int top_gainer=0x7f060028;
+        public static final int top_looser=0x7f060029;
+        public static final int total_price=0x7f06002a;
+        public static final int unit_price=0x7f06002b;
+        public static final int zerostr=0x7f06002c;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
