@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" 
+     >
+
+    <TextView
+        android:id="@+id/fillTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_input"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/buyPriceTV"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_price" />
+
+        <EditText
+            android:id="@+id/buyPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/buyPriceTV"
+            android:inputType="numberDecimal"
+            android:text="@string/zerostr" />
+
+        <TextView
+            android:id="@+id/commissionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/buyPrice"
+            android:text="@string/commission" />
+
+        <EditText
+            android:id="@+id/commissionET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/commissionTV"
+            android:inputType="number"
+            android:text="@string/commision" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/sellValueTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sell_price" />
+
+        <EditText
+            android:id="@+id/sellValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"  
+            android:layout_toRightOf="@+id/sellValueTV"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/zerostr" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/quantityTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity" />
+
+    <EditText
+        android:id="@+id/quantityET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/initial_buy_quantity" />
+
+    <TextView
+        android:id="@+id/unitPriceTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/totalTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total_price" />
+ 
+
+
+    <TextView
+        android:id="@+id/profitDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available_cash"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/cashinHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/initial_available_money" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/howmuchicanbuyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkHowMuchICanBuy"
+            android:text="@string/quantity" />
+        
+        <Button
+        android:id="@+id/buy_calculateBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/howmuchicanbuyBtn"
+        android:onClick="buyCalculateNow"
+        android:text="@string/buy_rate" />
+         
+
+        <Button
+            android:id="@+id/profitCalculateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="calculateProfit"
+            android:text="@string/profit" />
+
+        <Button
+            android:id="@+id/setAvailableMoneyToSoldMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/buy_calculateBtn"
+            android:text="@string/set_money" 
+            android:onClick="setSoldMoney" />
+
+    </RelativeLayout>
+
+  
+
+</LinearLayout>

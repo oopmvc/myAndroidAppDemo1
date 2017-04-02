@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DSE Calculator</string>
+    <string name="back_app">Back</string>
+    <string name="app_title">DSE BD - Calculator</string>
+    <string name="buy_calculator">Buy Calculator</string>
+    <string name="mixed_functions">Mixed Functions</string>
+    <string name="buy_rate">BUY Rate</string>
+    <string name="fill_input">Please populate Info</string>
+    <string name="buy_price">Buy Price</string>
+    <string name="commission">Commission</string>
+    <string name="quantity">Quantity</string>
+    <string name="unit_price">Per Unit </string>
+    <string name="total_price">Total : </string>
+    <string name="profit_loss">Profit or Loss </string>
+    <string name="available_cash">Available Cash </string>
+    <string name="calculate_quantity">Calculate Quantity</string>
+    <string name="company_list">Company List</string>
+    <string name="exit_app">Exit</string>
+    <string name="company_name">Company Name</string>
+    <string name="last_two_year_price">2YP</string>
+    <string name="last_tow_year_vol">2YV</string>
+    <string name="details_info">Details</string>
+    <string name="company_news">News</string>
+    <string name="company_price">PQ</string>
+     <string name="sell_price">Sell Price</string>
+    <string name="dse_index_chart">Idx</string>
+    <string name="top_20">T20</string>
+    <string name="by_trade_code">TC</string>
+    <string name="by_percentage_change">%C</string>
+    <string name="by_val">Val</string>
+    <string name="by_vol">Vol</string> 
+    <string name="by_last_trade_price">LTP</string>
+    <string name="top_gainer">T+</string>
+    <string name="top_looser">T-</string>
+    <string name="pe">PE</string>
+    <string name="zerostr">0</string>
+    <string name="commision">0.4</string>
+    <string name="initial_buy_quantity">500</string>
+    <string name="initial_available_money">200000</string>
+    <string name="profit">Profit</string>
+    <string name="set_money">Set Money</string>
+    
+     
+</resources>

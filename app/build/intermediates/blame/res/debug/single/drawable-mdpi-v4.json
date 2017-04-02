@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\android-app\\myAndroidAppDemo1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\background.xml",
+        "source": "D:\\android-app\\myAndroidAppDemo1\\app\\src\\main\\res\\drawable-mdpi\\background.xml"
+    },
+    {
+        "merged": "D:\\android-app\\myAndroidAppDemo1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\dse.jpg",
+        "source": "D:\\android-app\\myAndroidAppDemo1\\app\\src\\main\\res\\drawable-mdpi\\dse.jpg"
+    }
+]

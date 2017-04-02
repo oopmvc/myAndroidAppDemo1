@@ -1,0 +1,61 @@
+package com.example.myandroidappdemo;
+  
+import android.app.ListActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView; 
+
+
+public class CompanyListActivity extends ListActivity {
+	
+	 String[] companyArray = {"1JANATAMF" ,"AAMRATECH" ,"ABB1STMF"  ,"ABBANK"  ,"ACI" ,"ACIFORMULA" ,"ACIZCBOND","ACTIVEFINE" ,"AFCAGRO","AFTABAUTO","AGNISYSL","AGRANINS" ,"AIBL1STIMF","AIMS1STMF","AL-HAJTEX","ALARABANK","ALLTEX"   ,"AMBEEPHA" ,"AMCL(PRAN)","ANLIMAYARN","ANWARGALV","APEXFOODS","APEXFOOT" ,"APEXSPINN","APEXTANRY","APOLOISPAT","ARAMIT"   ,"ARAMITCEM","ARGONDENIM","ASIAINS"  ,"ASIAPACINS","ATLASBANG","AZIZPIPES","BANGAS"   ,"BANKASIA" ,"BATASHOE"   ,"BATBC"    ,"BAYLEASING","BDAUTOCA" ,"BDBUILDING","BDCOM"    ,"BDFINANCE","BDLAMPS"  ,"BDSERVICE","BDTHAI"   ,"BDWELDING","BEACHHATCH"      ,"BEACONPHAR","BEDL"     ,"BENGALWTL"
+     ,"BERGERPBL","BEXIMCO"  ,"BGIC"     ,"BIFC"    ,"BRACBANK"               ,"BRACSCBOND","BSC"     ,"BSCCL"   ,"BSRMSTEEL","BXPHARMA" ,"BXSYNTH" ,"CENTRALINS","CENTRALPHL","CITYBANK" ,"CITYGENINS","CMCKAMAL" ,"CONFIDCEM","CONTININS","CVOPRL"  ,"DACCADYE" ,"DAFODILCOM","DBH"     ,"DBH1STMF" ,"DEBARACEM","DEBBDLUGG","DEBBDWELD","DEBBDZIPP","DEBBXDENIM","DEBBXFISH","DEBBXKNI" ,"DEBBXTEX" ,"DELTALIFE","DELTASPINN","DESCO"    ,"DESHBANDHU","DHAKABANK","DHAKAINS" ,"DSHGARME" ,"DULAMIACOT","DUTCHBANGL","EASTERNINS","EASTLAND" ,"EASTRNLUB","EBL"      ,"EBL1STMF" ,"EBLNRBMF" ,"ECABLES"  ,"EHL"      ,"EMERALDOIL","ENVOYTEX" ,"EXIM1STMF","EXIMBANK" ,"FAMILYTEX","FAREASTFIN","FAREASTLIF","FASFIN"   ,"FBFIF"    ,"FEDERALINS","FINEFOODS","FIRSTSBANK","FLEASEINT","FUWANGCER","FUWANGFOOD","GBBPOWER" ,"GEMINISEA","GENNEXT"  ,"GHAIL"    ,"GHCL"     ,"GLAXOSMITH","GLOBALINS","GOLDENSON","GP"       ,"GPHISPAT" ,"GQBALLPEN","GRAMEEN1" ,"GRAMEENS2","GREENDELMF","GREENDELT","GSPFINANCE","HAKKANIPUL","HEIDELBCEM","HRTEX"    ,"IBBLPBOND","IBNSINA"  ,"ICB"      ,"ICB1STNRB","ICB2NDNRB","ICB3RDNRB","ICBAMCL2ND","ICBEPMF1S1","ICBIBANK" ,"ICBISLAMIC","ICBSONALI1","IDLC"     ,"IFIC"     ,"IFIC1STMF","IFILISLMF1","ILFSL"    ,"IMAMBUTTON","INTECH"   ,"IPDC"     ,"ISLAMIBANK","ISLAMICFIN","ISLAMIINS","ISNLTD"   ,"JAMUNABANK","JAMUNAOIL","JANATAINS","JMISMDL"  ,"JUTESPINN","KARNAPHULI","KAY&amp;QUE","KEYACOSMET"   ,"KOHINOOR" ,"KPCL"     ,"LAFSURCEML","LANKABAFIN","LEGACYFOOT","LIBRAINFU","LINDEBD"   ,"LRGLOBMF1","MAKSONSPIN","MALEKSPIN","MARICO"   ,"MATINSPINN","MBL1STMF" ,"MEGCONMILK","MEGHNACEM","MEGHNALIFE","MEGHNAPET"
+     ,"MERCANBANK","MERCINS"  ,"METROSPIN","MHSML"    ,"MICEMENT" ,"MIDASFIN" ,"MIRACLEIND","MITHUNKNIT","MJLBD"    ,"MODERNDYE","MONNOCERA","MONNOSTAF","MPETROLEUM","MTB"      ,"NATLIFEINS","NAVANACNG","NBL"      ,"NCCBANK"  ,"NCCBLMF1" ,"NHFIL"    ,"NITOLINS" ,"NLI1STMF" ,"NORTHERN" ,"NORTHRNINS","NPOLYMAR" ,"NTC"      ,"NTLTUBES" ,"OLYMPIC"  ,"ONEBANKLTD","ORIONINFU","ORIONPHARM","PADMALIFE","PADMAOIL" ,"PARAMOUNT","PEOPLESINS","PF1STMF"  ,"PHARMAID" ,"PHENIXINS","PHOENIXFIN","PHPMF1"   ,"PIONEERINS","PLFSL"    ,"POPULAR1MF","POPULARLIF","POWERGRID","PRAGATIINS","PRAGATILIF","PREMIERBAN","PREMIERCEM","PREMIERLEA","PRIME1ICBA","PRIMEBANK","PRIMEFIN" ,"PRIMEINSUR","PRIMELIFE","PRIMETEX" ,"PROGRESLIF","PROVATIINS","PTL"      ,"PUBALIBANK","PURABIGEN","QSMDRYCELL","RAHIMAFOOD","RAHIMTEXT","RAKCERAMIC","RANFOUNDRY","RDFOOD"   ,"RECKITTBEN","RELIANCE1","RELIANCINS","RENATA"   ,"RENWICKJA","REPUBLIC" ,"RNSPIN"   ,"RUPALIBANK","RUPALIINS","RUPALILIFE","SAFKOSPINN" ,"SAIHAMCOT","SAIHAMTEX","SALAMCRST","SALVOCHEM","SAMATALETH","SAMORITA" ,"SANDHANINS","SAPORTL"  ,"SAVAREFR" ,"SEBL1STMF","SHAHJABANK","SHYAMPSUG","SIBL"     ,"SINGERBD" ,"SINOBANGLA","SONALIANSH","SONARBAINS","SONARGAON","SOUTHEASTB","SPCERAMICS","SPPCL"    ,"SQUARETEXT","SQURPHARMA","STANCERAM","STANDARINS","STANDBANKL","STYLECRAFT","SUMITPOWER","SUNLIFEINS" ,"TAKAFULINS","TALLUSPIN","TITASGAS" ,"TRUSTB1MF","TRUSTBANK","UCBL"     ,"ULC"      ,"UNIONCAP" ,"UNIQUEHRL","UNITEDAIR","UNITEDINS","USMANIAGL","UTTARABANK"
+     ,"UTTARAFIN","ZAHINTEX" ,"ZEALBANGLA"};
+	 
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_company_list);
+		
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, 
+			      android.R.layout.simple_list_item_1, companyArray);
+		
+		ListView lv = (ListView) findViewById(android.R.id.list);
+		lv.setAdapter(adapter); 
+		
+		
+		
+	}
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+	    if(item.getItemId() == android.R.id.home){
+	    	finish();
+	    }
+		return super.onMenuItemSelected(featureId, item);
+	}
+	
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		super.onListItemClick(l, v, position, id);
+		String companyname = companyArray[position].toString();
+		
+        Intent intent = new Intent(this, CompanyDetailsActivity.class);
+        intent.putExtra("company_name", companyname);
+        startActivity(intent); 
+		
+		 
+	}
+	
+ 
+
+}
+

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\android-app\\myAndroidAppDemo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_company_details.xml",
+        "source": "D:\\android-app\\myAndroidAppDemo1\\app\\src\\main\\res\\layout\\activity_company_details.xml"
+    },
+    {
+        "merged": "D:\\android-app\\myAndroidAppDemo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_buy_calculator.xml",
+        "source": "D:\\android-app\\myAndroidAppDemo1\\app\\src\\main\\res\\layout\\activity_buy_calculator.xml"
+    },
+    {
+        "merged": "D:\\android-app\\myAndroidAppDemo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_company_list.xml",
+        "source": "D:\\android-app\\myAndroidAppDemo1\\app\\src\\main\\res\\layout\\activity_company_list.xml"
+    },
+    {
+        "merged": "D:\\android-app\\myAndroidAppDemo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mixedfunctions.xml",
+        "source": "D:\\android-app\\myAndroidAppDemo1\\app\\src\\main\\res\\layout\\activity_mixedfunctions.xml"
+    },
+    {
+        "merged": "D:\\android-app\\myAndroidAppDemo1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\android-app\\myAndroidAppDemo1\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]
