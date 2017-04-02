@@ -20,15 +20,15 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int action_buy_share=0x7f080021;
+        public static final int action_buy_share=0x7f080022;
         public static final int button1=0x7f080017;
         public static final int button2=0x7f080018;
         public static final int button3=0x7f080019;
         public static final int button4=0x7f08001a;
         public static final int button5=0x7f08001b;
         public static final int button6=0x7f08001d;
-        public static final int button7=0x7f08001e;
-        public static final int button8=0x7f08001f;
+        public static final int button7=0x7f08001f;
+        public static final int button8=0x7f080020;
         public static final int buyPrice=0x7f080002;
         public static final int buyPriceTV=0x7f080001;
         public static final int buy_calculateBtn=0x7f080012;
@@ -37,7 +37,7 @@ public final class R {
         public static final int commissionET=0x7f080004;
         public static final int commissionTV=0x7f080003;
         public static final int companyCode=0x7f080016;
-        public static final int exit_app=0x7f080020;
+        public static final int exit_app=0x7f080021;
         public static final int expectedProfit=0x7f080007;
         public static final int expectedProfitValue=0x7f080008;
         public static final int fillTV=0x7f080000;
@@ -51,6 +51,7 @@ public final class R {
         public static final int sellValueWithExpectedProfit=0x7f08000e;
         public static final int setAvailableMoneyToSoldMoney=0x7f080014;
         public static final int textView1=0x7f08000f;
+        public static final int textView2=0x7f08001e;
         public static final int totalTV=0x7f08000c;
         public static final int unitPriceTV=0x7f08000b;
         public static final int webView1=0x7f08001c;
