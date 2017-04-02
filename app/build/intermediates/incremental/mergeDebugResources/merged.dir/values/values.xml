@@ -8,12 +8,13 @@
     <string name="back_app">Back</string>
     <string name="buy_calculator">Buy Calculator</string>
     <string name="buy_price">Buy Price</string>
-    <string name="buy_rate">BUY Rate</string>
+    <string name="buy_rate">BUY$</string>
     <string name="by_last_trade_price">LTP</string>
     <string name="by_percentage_change">%C</string>
     <string name="by_trade_code">TC</string>
     <string name="by_val">Val</string>
     <string name="by_vol">Vol</string>
+    <string name="calculateSellRateWithExpectedProfit">Exp%</string>
     <string name="calculate_quantity">Calculate Quantity</string>
     <string name="commision">0.4</string>
     <string name="commission">Commission</string>
@@ -24,6 +25,8 @@
     <string name="details_info">Details</string>
     <string name="dse_index_chart">Idx</string>
     <string name="exit_app">Exit</string>
+    <string name="expectedProfit">Expt.Profit%</string>
+    <string name="expectedProfitValue">15</string>
     <string name="fill_input">Please populate Info</string>
     <string name="initial_available_money">200000</string>
     <string name="initial_buy_quantity">500</string>
@@ -33,9 +36,9 @@
     <string name="pe">PE</string>
     <string name="profit">Profit</string>
     <string name="profit_loss">Profit or Loss </string>
-    <string name="quantity">Quantity</string>
+    <string name="quantity">Qty</string>
     <string name="sell_price">Sell Price</string>
-    <string name="set_money">Set Money</string>
+    <string name="set_money">Set $</string>
     <string name="top_20">T20</string>
     <string name="top_gainer">T+</string>
     <string name="top_looser">T-</string>
@@ -43,13 +46,9 @@
     <string name="unit_price">Per Unit </string>
     <string name="zerostr">0</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
 </resources>

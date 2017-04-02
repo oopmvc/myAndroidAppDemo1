@@ -79,6 +79,32 @@ public class BuyCalculatorActivity extends Activity {
 
 	}
 
+	public void calculateSellRateWithExpectedProfit(View v){
+		EditText et = (EditText) findViewById(R.id.buyPrice);
+		Float buyPrice = Float.parseFloat(et.getText().toString());
+		buyPrice = (buyPrice < 1) ? 1 : buyPrice;
+
+		EditText profitPercentage = (EditText) findViewById(R.id.expectedProfitValue);
+		Float profitPercentageValue = Float.parseFloat(profitPercentage.getText().toString());
+		profitPercentageValue = (profitPercentageValue < 0) ? 0 : profitPercentageValue;
+
+		et = (EditText) findViewById(R.id.commissionET);
+		Float commission = Float.parseFloat(et.getText().toString());
+		commission = (commission <= 0) ? (Float.parseFloat("0.4")) : commission;
+
+		Float uprice 	= buyPrice + (( buyPrice * commission ) / 100);
+
+		Float exptSellValue =  ((( uprice * profitPercentageValue ) / 100));
+		Float sellCommition  = (( (uprice + exptSellValue) * commission ) / 100 );
+
+		Float sellPrice =  uprice +  exptSellValue + sellCommition ;
+
+		TextView tv = (TextView) findViewById(R.id.sellValueWithExpectedProfit);
+		tv.setText("Sell/Share (+%) : " + sellPrice + " BDT ");
+
+
+	}
+
 	public void calculateProfit(View v){
 		Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/ubuntu-c.ttf");
 		EditText et = (EditText) findViewById(R.id.buyPrice);

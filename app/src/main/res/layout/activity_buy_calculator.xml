@@ -69,6 +69,22 @@
             android:inputType="numberDecimal"
             android:text="@string/zerostr" />
 
+
+          <TextView
+              android:id="@+id/expectedProfit"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/sellValue"
+              android:text="@string/expectedProfit" />
+
+          <EditText
+              android:id="@+id/expectedProfitValue"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/expectedProfit"
+              android:inputType="number"
+              android:text="@string/expectedProfitValue" />
+
     </RelativeLayout>
 
     <TextView
@@ -96,7 +112,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/total_price" />
- 
+
 
 
     <TextView
@@ -104,8 +120,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="" />
-    
-    
+
+
+    <TextView
+        android:id="@+id/sellValueWithExpectedProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
@@ -165,8 +188,20 @@
             android:text="@string/set_money" 
             android:onClick="setSoldMoney" />
 
+        <Button
+            android:id="@+id/calculateSellRateWithExpectedProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/setAvailableMoneyToSoldMoney"
+            android:onClick="calculateSellRateWithExpectedProfit"
+            android:text="@string/calculateSellRateWithExpectedProfit" />
+
+
     </RelativeLayout>
 
-  
+
+
+
 
 </LinearLayout>
